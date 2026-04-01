@@ -140,6 +140,7 @@
             // 
             // PicClose
             // 
+            this.PicClose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.PicClose.FillColor = System.Drawing.Color.Transparent;
             this.PicClose.Image = ((System.Drawing.Image)(resources.GetObject("PicClose.Image")));
             this.PicClose.ImageRotate = 0F;
@@ -510,6 +511,7 @@
             // 
             // btnAddAppTrager
             // 
+            this.btnAddAppTrager.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAddAppTrager.FillColor = System.Drawing.Color.Transparent;
             this.btnAddAppTrager.Image = ((System.Drawing.Image)(resources.GetObject("btnAddAppTrager.Image")));
             this.btnAddAppTrager.ImageRotate = 0F;
@@ -551,7 +553,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmSettings";
-            this.Text = "FrmSettings";
+            this.Text = "Settings";
             this.PnlTopBar.ResumeLayout(false);
             this.PnlTopBar.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();

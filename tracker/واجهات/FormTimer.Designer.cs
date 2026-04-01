@@ -45,9 +45,9 @@
             this.CMS_RestartBreak = new System.Windows.Forms.ToolStripMenuItem();
             this.CMS_RestartWork = new System.Windows.Forms.ToolStripMenuItem();
             this.CMS_Close = new System.Windows.Forms.ToolStripMenuItem();
+            this.CMS_Settings = new System.Windows.Forms.ToolStripMenuItem();
             this.lblTimerBreak = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
-            this.CMS_Settings = new System.Windows.Forms.ToolStripMenuItem();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.CMS.SuspendLayout();
@@ -88,12 +88,12 @@
             this.CMS_Close,
             this.CMS_Settings});
             this.CMS.Name = "contextMenuStrip1";
-            this.CMS.Size = new System.Drawing.Size(181, 180);
+            this.CMS.Size = new System.Drawing.Size(133, 158);
             // 
             // CMS_btnShow
             // 
             this.CMS_btnShow.Name = "CMS_btnShow";
-            this.CMS_btnShow.Size = new System.Drawing.Size(180, 22);
+            this.CMS_btnShow.Size = new System.Drawing.Size(132, 22);
             this.CMS_btnShow.Text = "Show";
             this.CMS_btnShow.Click += new System.EventHandler(this.CMS_btnShow_Click);
             // 
@@ -104,7 +104,7 @@
             this.CMS_01,
             this.CMS_02});
             this.CMS_btnHide.Name = "CMS_btnHide";
-            this.CMS_btnHide.Size = new System.Drawing.Size(180, 22);
+            this.CMS_btnHide.Size = new System.Drawing.Size(132, 22);
             this.CMS_btnHide.Text = "Hide";
             this.CMS_btnHide.Click += new System.EventHandler(this.CMS_btnHide_Click);
             // 
@@ -132,14 +132,14 @@
             // CMS_StopTimer
             // 
             this.CMS_StopTimer.Name = "CMS_StopTimer";
-            this.CMS_StopTimer.Size = new System.Drawing.Size(180, 22);
+            this.CMS_StopTimer.Size = new System.Drawing.Size(132, 22);
             this.CMS_StopTimer.Text = "Stop Timer";
             this.CMS_StopTimer.Click += new System.EventHandler(this.CMS_StopTimer_Click);
             // 
             // CMS_StartTimer
             // 
             this.CMS_StartTimer.Name = "CMS_StartTimer";
-            this.CMS_StartTimer.Size = new System.Drawing.Size(180, 22);
+            this.CMS_StartTimer.Size = new System.Drawing.Size(132, 22);
             this.CMS_StartTimer.Text = "Start Timer";
             this.CMS_StartTimer.Click += new System.EventHandler(this.CMS_StartTimer_Click);
             // 
@@ -149,7 +149,7 @@
             this.CMS_RestartBreak,
             this.CMS_RestartWork});
             this.restartToolStripMenuItem.Name = "restartToolStripMenuItem";
-            this.restartToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.restartToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
             this.restartToolStripMenuItem.Text = "Restart";
             // 
             // CMS_RestartBreak
@@ -169,9 +169,16 @@
             // CMS_Close
             // 
             this.CMS_Close.Name = "CMS_Close";
-            this.CMS_Close.Size = new System.Drawing.Size(180, 22);
+            this.CMS_Close.Size = new System.Drawing.Size(132, 22);
             this.CMS_Close.Text = "Close";
             this.CMS_Close.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
+            // 
+            // CMS_Settings
+            // 
+            this.CMS_Settings.Name = "CMS_Settings";
+            this.CMS_Settings.Size = new System.Drawing.Size(132, 22);
+            this.CMS_Settings.Text = "Settings";
+            this.CMS_Settings.Click += new System.EventHandler(this.CMS_Settings_Click);
             // 
             // lblTimerBreak
             // 
@@ -188,13 +195,6 @@
             // 
             this.toolTip1.IsBalloon = true;
             this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
-            // 
-            // CMS_Settings
-            // 
-            this.CMS_Settings.Name = "CMS_Settings";
-            this.CMS_Settings.Size = new System.Drawing.Size(180, 22);
-            this.CMS_Settings.Text = "Settings";
-            this.CMS_Settings.Click += new System.EventHandler(this.CMS_Settings_Click);
             // 
             // pictureBox2
             // 
@@ -235,7 +235,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "FormTimer";
-            this.Text = "Form1";
+            this.Text = "Timer Tracker";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.CMS.ResumeLayout(false);

@@ -64,10 +64,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class\ClsTrackingPrograms.cs" />
-    <Compile Include="Class\FrmSettings.cs">
+    <Compile Include="واجهات\FrmSettings.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Class\FrmSettings.Designer.cs">
+    <Compile Include="واجهات\FrmSettings.Designer.cs">
       <DependentUpon>FrmSettings.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
@@ -85,7 +85,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="AssemblyInfo.cs" />
     <Compile Include="Class\WindowTracker.cs" />
-    <EmbeddedResource Include="Class\FrmSettings.resx">
+    <EmbeddedResource Include="واجهات\FrmSettings.resx">
       <DependentUpon>FrmSettings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="واجهات\FormTimer.resx">

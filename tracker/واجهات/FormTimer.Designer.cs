@@ -70,6 +70,7 @@
             // 
             this.lblTime.AutoSize = true;
             this.lblTime.ContextMenuStrip = this.CMS;
+            this.lblTime.Cursor = System.Windows.Forms.Cursors.Help;
             this.lblTime.Location = new System.Drawing.Point(69, 21);
             this.lblTime.Name = "lblTime";
             this.lblTime.Size = new System.Drawing.Size(80, 22);
@@ -184,6 +185,7 @@
             // 
             this.lblTimerBreak.AutoSize = true;
             this.lblTimerBreak.ContextMenuStrip = this.CMS;
+            this.lblTimerBreak.Cursor = System.Windows.Forms.Cursors.Help;
             this.lblTimerBreak.Location = new System.Drawing.Point(232, 21);
             this.lblTimerBreak.Name = "lblTimerBreak";
             this.lblTimerBreak.Size = new System.Drawing.Size(80, 22);

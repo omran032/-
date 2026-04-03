@@ -45,12 +45,14 @@
             this.CMS_RestartBreak = new System.Windows.Forms.ToolStripMenuItem();
             this.CMS_RestartWork = new System.Windows.Forms.ToolStripMenuItem();
             this.CMS_Close = new System.Windows.Forms.ToolStripMenuItem();
-            this.CMS_Settings = new System.Windows.Forms.ToolStripMenuItem();
             this.lblTimerBreak = new System.Windows.Forms.Label();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.CMS_Settings = new System.Windows.Forms.ToolStripMenuItem();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.CMS.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -76,7 +78,7 @@
             this.lblTime.Size = new System.Drawing.Size(80, 22);
             this.lblTime.TabIndex = 1;
             this.lblTime.Text = "00:00:00";
-            this.toolTip1.SetToolTip(this.lblTime, "مؤقت الوقت الذي تم فتح برامج العمل");
+            this.toolTip1.SetToolTip(this.lblTime, "المؤقت الذي يعمل عند فتح البرامج المحددة");
             // 
             // CMS
             // 
@@ -89,12 +91,14 @@
             this.CMS_Close,
             this.CMS_Settings});
             this.CMS.Name = "contextMenuStrip1";
-            this.CMS.Size = new System.Drawing.Size(133, 158);
+            this.CMS.Size = new System.Drawing.Size(181, 180);
             // 
             // CMS_btnShow
             // 
+            this.CMS_btnShow.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CMS_btnShow.Image = ((System.Drawing.Image)(resources.GetObject("CMS_btnShow.Image")));
             this.CMS_btnShow.Name = "CMS_btnShow";
-            this.CMS_btnShow.Size = new System.Drawing.Size(132, 22);
+            this.CMS_btnShow.Size = new System.Drawing.Size(180, 22);
             this.CMS_btnShow.Text = "Show";
             this.CMS_btnShow.Click += new System.EventHandler(this.CMS_btnShow_Click);
             // 
@@ -104,43 +108,49 @@
             this.CMSHide005,
             this.CMS_01,
             this.CMS_02});
+            this.CMS_btnHide.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CMS_btnHide.Image = ((System.Drawing.Image)(resources.GetObject("CMS_btnHide.Image")));
             this.CMS_btnHide.Name = "CMS_btnHide";
-            this.CMS_btnHide.Size = new System.Drawing.Size(132, 22);
+            this.CMS_btnHide.Size = new System.Drawing.Size(180, 22);
             this.CMS_btnHide.Text = "Hide";
             this.CMS_btnHide.Click += new System.EventHandler(this.CMS_btnHide_Click);
             // 
             // CMSHide005
             // 
             this.CMSHide005.Name = "CMSHide005";
-            this.CMSHide005.Size = new System.Drawing.Size(95, 22);
+            this.CMSHide005.Size = new System.Drawing.Size(180, 22);
             this.CMSHide005.Text = "0.05";
             this.CMSHide005.Click += new System.EventHandler(this.CMSHide005_Click);
             // 
             // CMS_01
             // 
             this.CMS_01.Name = "CMS_01";
-            this.CMS_01.Size = new System.Drawing.Size(95, 22);
+            this.CMS_01.Size = new System.Drawing.Size(180, 22);
             this.CMS_01.Text = "0.1";
             this.CMS_01.Click += new System.EventHandler(this.CMS_01_Click);
             // 
             // CMS_02
             // 
             this.CMS_02.Name = "CMS_02";
-            this.CMS_02.Size = new System.Drawing.Size(95, 22);
+            this.CMS_02.Size = new System.Drawing.Size(180, 22);
             this.CMS_02.Text = "0.2";
             this.CMS_02.Click += new System.EventHandler(this.CMS_02_Click);
             // 
             // CMS_StopTimer
             // 
+            this.CMS_StopTimer.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CMS_StopTimer.Image = ((System.Drawing.Image)(resources.GetObject("CMS_StopTimer.Image")));
             this.CMS_StopTimer.Name = "CMS_StopTimer";
-            this.CMS_StopTimer.Size = new System.Drawing.Size(132, 22);
+            this.CMS_StopTimer.Size = new System.Drawing.Size(180, 22);
             this.CMS_StopTimer.Text = "Stop Timer";
             this.CMS_StopTimer.Click += new System.EventHandler(this.CMS_StopTimer_Click);
             // 
             // CMS_StartTimer
             // 
+            this.CMS_StartTimer.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CMS_StartTimer.Image = ((System.Drawing.Image)(resources.GetObject("CMS_StartTimer.Image")));
             this.CMS_StartTimer.Name = "CMS_StartTimer";
-            this.CMS_StartTimer.Size = new System.Drawing.Size(132, 22);
+            this.CMS_StartTimer.Size = new System.Drawing.Size(180, 22);
             this.CMS_StartTimer.Text = "Start Timer";
             this.CMS_StartTimer.Click += new System.EventHandler(this.CMS_StartTimer_Click);
             // 
@@ -149,37 +159,34 @@
             this.restartToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.CMS_RestartBreak,
             this.CMS_RestartWork});
+            this.restartToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.restartToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("restartToolStripMenuItem.Image")));
             this.restartToolStripMenuItem.Name = "restartToolStripMenuItem";
-            this.restartToolStripMenuItem.Size = new System.Drawing.Size(132, 22);
+            this.restartToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.restartToolStripMenuItem.Text = "Restart";
             // 
             // CMS_RestartBreak
             // 
             this.CMS_RestartBreak.Name = "CMS_RestartBreak";
-            this.CMS_RestartBreak.Size = new System.Drawing.Size(142, 22);
+            this.CMS_RestartBreak.Size = new System.Drawing.Size(180, 22);
             this.CMS_RestartBreak.Text = "Restart Break";
             this.CMS_RestartBreak.Click += new System.EventHandler(this.CMS_RestartBreak_Click);
             // 
             // CMS_RestartWork
             // 
             this.CMS_RestartWork.Name = "CMS_RestartWork";
-            this.CMS_RestartWork.Size = new System.Drawing.Size(142, 22);
+            this.CMS_RestartWork.Size = new System.Drawing.Size(180, 22);
             this.CMS_RestartWork.Text = "Restak Work";
             this.CMS_RestartWork.Click += new System.EventHandler(this.CMS_RestartWork_Click);
             // 
             // CMS_Close
             // 
+            this.CMS_Close.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CMS_Close.Image = ((System.Drawing.Image)(resources.GetObject("CMS_Close.Image")));
             this.CMS_Close.Name = "CMS_Close";
-            this.CMS_Close.Size = new System.Drawing.Size(132, 22);
+            this.CMS_Close.Size = new System.Drawing.Size(180, 22);
             this.CMS_Close.Text = "Close";
             this.CMS_Close.Click += new System.EventHandler(this.closeToolStripMenuItem_Click);
-            // 
-            // CMS_Settings
-            // 
-            this.CMS_Settings.Name = "CMS_Settings";
-            this.CMS_Settings.Size = new System.Drawing.Size(132, 22);
-            this.CMS_Settings.Text = "Settings";
-            this.CMS_Settings.Click += new System.EventHandler(this.CMS_Settings_Click);
             // 
             // lblTimerBreak
             // 
@@ -191,12 +198,34 @@
             this.lblTimerBreak.Size = new System.Drawing.Size(80, 22);
             this.lblTimerBreak.TabIndex = 3;
             this.lblTimerBreak.Text = "00:00:00";
-            this.toolTip1.SetToolTip(this.lblTimerBreak, "مؤقت الوقت الذي لم تقم بفتح برامج العمل");
+            this.toolTip1.SetToolTip(this.lblTimerBreak, "الموقت الذي يعمل عند ( عدم ) تشغيل البرامج");
             // 
             // toolTip1
             // 
             this.toolTip1.IsBalloon = true;
             this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            // 
+            // CMS_Settings
+            // 
+            this.CMS_Settings.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CMS_Settings.Image = global::tracker.Properties.Resources.Settings;
+            this.CMS_Settings.Name = "CMS_Settings";
+            this.CMS_Settings.Size = new System.Drawing.Size(180, 22);
+            this.CMS_Settings.Text = "Settings";
+            this.CMS_Settings.Click += new System.EventHandler(this.CMS_Settings_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.ContextMenuStrip = this.CMS;
+            this.pictureBox3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(340, 0);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(33, 28);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 6;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.CMS_Settings_Click);
             // 
             // pictureBox2
             // 
@@ -208,7 +237,7 @@
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 5;
             this.pictureBox2.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox2, "مؤقت الوقت الذي لم تقم بفتح برامج العمل");
+            this.toolTip1.SetToolTip(this.pictureBox2, "الموقت الذي يعمل عند ( عدم ) تشغيل البرامج");
             // 
             // pictureBox1
             // 
@@ -220,14 +249,15 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 4;
             this.pictureBox1.TabStop = false;
-            this.toolTip1.SetToolTip(this.pictureBox1, "مؤقت الوقت الذي تم فتح برامج العمل");
+            this.toolTip1.SetToolTip(this.pictureBox1, "المؤقت الذي يعمل عند فتح البرامج المحددة");
             // 
             // FormTimer
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(348, 65);
+            this.ClientSize = new System.Drawing.Size(375, 65);
             this.ContextMenuStrip = this.CMS;
+            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.lblTimerBreak);
@@ -241,6 +271,7 @@
             this.TopMost = true;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.CMS.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -269,6 +300,7 @@
         private System.Windows.Forms.ToolTip toolTip1;
         private System.Windows.Forms.ToolStripMenuItem CMS_Close;
         private System.Windows.Forms.ToolStripMenuItem CMS_Settings;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
 

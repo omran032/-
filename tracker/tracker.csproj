@@ -113,6 +113,7 @@
   <ItemGroup>
     <Content Include="FodyWeavers.xml" />
     <Content Include="Preview Pane.ico" />
+    <None Include="Resources\Settings.png" />
     <None Include="Resources\wired-lineal-69-eye-hover-blink %281%29.gif" />
     <None Include="Resources\wired-outline-69-eye-hover-blink.gif" />
     <None Include="Resources\Preview Pane.png" />

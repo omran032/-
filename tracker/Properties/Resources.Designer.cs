@@ -73,6 +73,16 @@ namespace tracker.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        public static System.Drawing.Bitmap Settings {
+            get {
+                object obj = ResourceManager.GetObject("Settings", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         public static System.Drawing.Bitmap wired_lineal_69_eye_hover_blink__1_ {
             get {
                 object obj = ResourceManager.GetObject("wired-lineal-69-eye-hover-blink (1)", resourceCulture);
